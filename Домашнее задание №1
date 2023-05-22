@@ -1,0 +1,52 @@
+# 19_7_1
+Задание 19.2.4
+предполагается новый проект с нужными каталогами и файлами.
+Напишите одному по позитивному тесту для каждого врача калькулятора.
+
+
+
+класс TestCalculator (unittest.TestCase):
+
+
+    деф setUp(я):
+        self.calc = Калькулятор()
+
+
+    определение test_addition (я):
+        self.assertEqual (self.calc.add (2, 3), 5)
+
+
+    защита test_subtraction (сам):
+        self.assertEqual (self.calc.subtract (5, 2), 3)
+
+
+    определение test_multiplication (сам):
+        self.assertEqual (self.calc.multiply (2, 5), 10)
+
+
+    определение test_division (я):
+        self.assertEqual (self.calc.divide (10, 2), 5)
+
+
+    защита test_exponentiation (я):
+        self.assertEqual (self.calc.power (2, 3), 8)
+
+
+    защита test_square_root (я):
+        self.assertEqual (self.calc.square_root (16), 4)
+
+
+    определение test_absolute_value (я):
+        self.assertEqual (self.calc.absolute_value (-5), 5)
+
+
+    защита test_floor_division (я):
+        self.assertEqual (self.calc.floor_divide (11, 2), 5)
+
+
+    деф test_modulus (я):
+        self.assertEqual (self.calc.modulus (10, 3), 1)
+
+
+если __name__ == '__main__':
+    unittest.main()
